@@ -13,6 +13,10 @@ def index():
     print("VISITING THE START PAGE")
     return render_template("start.html")
 
+@game_routes.route("/hello")
+def hello():
+    print("VISITING THE HELLO PAGE")
+    return render_template("hello_page.html")
 #
 # GET /results
 # GET /results?choice=rock
